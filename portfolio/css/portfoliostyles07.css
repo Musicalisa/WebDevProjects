@@ -1,0 +1,274 @@
+/* Lisa Cifuentes, 11/11/2018 */
+
+.float-left {
+    float: left;
+}
+
+
+/* Mobile styling */
+figure img {
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+/* additional style for nav specifies text properties */
+nav {
+    font-family: Garamond, Helvetica, serif;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 1.5em;
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul {
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+nav li {
+    background-color: #000000;
+    border-radius: 1.5em;
+    list-style-type: none;
+    text-align: center;
+    margin: 0.3em;
+    padding: 0.4em;
+
+}
+
+nav li a {
+    color:  #B7918C;
+    text-decoration: none;
+}
+
+#outerwrapper {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+/* Style displays the mobile class */
+.mobile {
+    display: inline;
+}
+
+/* Style displays the desktop class */
+.desktop {
+    display: none;
+}
+
+#main {
+    overflow: auto;
+    clear: both;
+    background-color: #F9E7DF;
+    padding: 3%;
+    border: 0.1em black solid;
+    border-radius: 1.5em;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myname {
+    color: #BFB48F;
+    font-family: Garamond, Calibri, sans-serif;
+    text-align: center;
+    padding-top: 1%;
+    text-shadow: 0.15em 0.1em #000000;
+}
+
+/* additional style: adding body background color and font */
+body {
+    background-color: #424242;
+    font-family: Garamond, Helvetica, serif;
+}
+
+/* additional style for header (color) and footer (specifies font size, text alignment, and top margin) */
+header {
+    color: #F9E7DF;
+    text-align: center;
+}
+
+footer {
+    color: #F9E7DF;
+    font-size: .70em;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+/* adding color to h1 */
+h1 {
+    color: #424242;
+} 
+
+/* adding color to h2 */
+h2 {
+    color: #424242;
+}
+
+/* Styling section element for mobile (opt) */
+section h2 {
+    color:#424242;
+}
+
+/* Styling article h2 as italic for mobile */
+article h2 {
+    font-style: italic;
+}
+
+/* additional styles for unvisited, visited, and hovered over links */
+
+a:link {
+    color: #B7918C;
+}
+
+a:visited {
+    color: #BFB48F;
+}
+
+a:hover {
+    color: #FAFAFA;
+}
+
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px. */
+
+@media only screen and (min-width: 660px) {
+    /* Style specifies a horizontal display for nav links */  
+    
+    nav {
+        margin-left: 0.8em;
+        margin-right: 0.2em;
+    }
+    
+    nav li {
+        display: inline;
+        float: left;
+        margin-left: 0.4%;
+        margin-right: 0.4%;
+        margin-top: -1em;
+        padding-left: .1em;
+        padding-right: .1em;
+        width: 18.5%;
+        white-space: nowrap;
+        text-align: center;
+    }
+    /* Style specifies clear and top margin properties for the main element */
+    #main {
+        clear: left;
+        margin-top: -1em;
+    }
+   
+    /* Style specifies to hide the mobile class */
+    .mobile {
+        display: none;
+    }
+    
+    /*Style specifies to display the desktop class */
+    .desktop {
+        display: inline;
+    }
+    
+    /* Img resizing */
+    figure img {
+        margin-bottom: 0.5em;
+        max-width: 70%;
+    }
+    
+   /* Styling section element for tablet and desktop (opt)*/
+    section h2 {
+            color:#424242
+    }
+
+    /* Styling article h2 as italic for tablet and desktop (opt) */
+    article h2 {
+        font-style: italic;
+    }
+    
+}
+
+/* Media query for desktop viewport targets screens with a min width of 830px. */
+
+@media only screen and (min-width: 830px) {
+    
+    /* Style specifies a width for container */
+    #outerwrapper {
+        width: 80%;
+    }
+    
+    /* additional style for nav specifies text properties */
+    nav {
+        font-family: Garamond, Helvetica, serif;
+        font-size: 1em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Style specifies margin and padding for the unordered list within the nav */
+    nav ul {
+        margin: 0;
+        padding-left: 0.50%;
+        padding-right: 0.50%;
+    }
+    
+    /* Style for nav list items specifies a border radius, border, margin, width, and padding */
+    nav li {
+        border-radius: 0;
+        border-top: solid #000000;
+        border-bottom: solid #000000;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 20%;
+    }
+    
+    nav .leftButton {
+        border-radius: 1.5em 0 0 1.5em;
+    }
+    
+    nav .rightButton {
+        border-radius: 0 1.5em 1.5em 0;
+    }
+    
+    /* Style for nav links specifies display and padding */
+    nav li a {
+        display: inline-block;
+        padding: 0.7em;
+    }
+    
+    /*Style rules for pseudo-classes */
+    nav li a:link {
+        color: #B7918C;
+    }
+    
+    nav li a:visited {
+        color: #BFB48F;
+    }
+    
+    nav li a:hover {
+        color: #FAFAFA;
+    }
+    
+    /* Style specifies border, shadow, margin, and padding for main element */
+    #main {
+        border-style: none;
+        box-shadow: 0.5em 0.5em 0.5em #404040;
+        margin-bottom: 1em;
+        margin-top: -7em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    
+    /* Style specifies left and right padding for paragraph elements within the main element */
+    #main p {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    figure img {
+        margin-bottom: 0.5em;
+        max-width: 50%;
+    }
+}

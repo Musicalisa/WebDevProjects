@@ -1,0 +1,119 @@
+/* Lisa Cifuentes, 10/28/2018 */
+
+.float-left {
+    float: left;
+}
+
+
+/* Mobile styling */
+img {
+    margin-bottom: 0.5em;
+    max-width: 50%;
+}
+
+/* additional style for nav specifies text properties */
+nav {
+    font-family: Garamond, Helvetica, serif;
+    font-size: 1em;
+    text-align: center;
+    /* Commenting out desktop view styling for future reference in case it is needed.
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border-top: 3px solid #F9E7DF;
+    border-bottom: 3px solid #F9E7DF;
+    */
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul {
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+nav li {
+    background-color: #000000;
+    border-radius: 2em;
+    list-style-type: none;
+    text-align: center;
+    margin: 0.3em;
+    padding: 0.4em;
+
+}
+
+nav li a {
+    color:  #B7918C;
+    text-decoration: none;
+}
+
+#outerwrapper {
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+/* Style displays the mobile class */
+.mobile {
+    display: inline;
+}
+
+/* Style displays the desktop class */
+.desktop {
+    display: none;
+}
+
+#main {
+    clear: both;
+    background-color: #F9E7DF;
+    padding: 3%;
+    border: 0.1em black solid;
+    border-radius: 1.5em;
+
+}
+
+.myname {
+    font-family: Futura, Calibri, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1%;
+}
+
+/* additional style: adding body background color and font */
+body {
+    background-color: #424242;
+    font-family: Garamond, Helvetica, serif;
+}
+
+/* additional style for header (color) and footer (specifies font size, text alignment, and top margin) */
+header {
+    color: #F9E7DF;
+    text-align: center;
+}
+
+footer {
+    color: #F9E7DF;
+    font-size: .70em;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+/* adding color to h2 */
+h2 {
+    color: #424242;
+}
+
+/* additional styles for unvisited, visited, and hovered over links */
+
+a:link {
+    color: #B7918C;
+}
+
+a:visited {
+    color: #BFB48F;
+}
+
+a:hover {
+    color: #FAFAFA;
+    font-style: italic;
+}

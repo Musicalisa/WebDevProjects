@@ -1,0 +1,213 @@
+/* Lisa Cifuentes, 10/28/2018 */
+
+.float-left {
+    float: left;
+}
+
+
+/* Mobile styling */
+img {
+    margin-bottom: 0.5em;
+    max-width: 50%;
+}
+
+/* additional style for nav specifies text properties */
+nav {
+    font-family: Garamond, Helvetica, serif;
+    font-size: 1em;
+    text-align: center;
+    /* Commenting out desktop view styling for future reference in case it is needed.
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border-top: 3px solid #F9E7DF;
+    border-bottom: 3px solid #F9E7DF;
+    */
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul {
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+nav li {
+    background-color: #000000;
+    border-radius: 2em;
+    list-style-type: none;
+    text-align: center;
+    margin: 0.3em;
+    padding: 0.4em;
+
+}
+
+nav li a {
+    color:  #B7918C;
+    text-decoration: none;
+}
+
+#outerwrapper {
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+/* Style displays the mobile class */
+.mobile {
+    display: inline;
+}
+
+/* Style displays the desktop class */
+.desktop {
+    display: none;
+}
+
+#main {
+    clear: both;
+    background-color: #F9E7DF;
+    padding: 3%;
+    border: 0.1em black solid;
+    border-radius: 1.5em;
+
+}
+
+.myname {
+    font-family: Futura, Calibri, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1%;
+}
+
+/* additional style: adding body background color and font */
+body {
+    background-color: #424242;
+    font-family: Garamond, Helvetica, serif;
+}
+
+/* additional style for header (color) and footer (specifies font size, text alignment, and top margin) */
+header {
+    color: #F9E7DF;
+    text-align: center;
+}
+
+footer {
+    color: #F9E7DF;
+    font-size: .70em;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+/* adding color to h2 */
+h2 {
+    color: #424242;
+}
+
+/* additional styles for unvisited, visited, and hovered over links */
+
+a:link {
+    color: #B7918C;
+}
+
+a:visited {
+    color: #BFB48F;
+}
+
+a:hover {
+    color: #FAFAFA;
+    font-style: italic;
+}
+
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px. */
+
+@media only screen and (min-width: 660px) {
+    /* Style specifies a horizontal display for nav links */  
+    nav li {
+        display: inline;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: 0;
+        padding-right: 0;
+        width: 18%;
+        white-space: nowrap;
+    }
+    /* Style specifies clear and top margin properties for the main element */
+    #main {
+        clear: left;
+        margin-top: 4em;
+    }
+    /* Style specifies to hide the mobile class */
+    .mobile {
+        display: none;
+    }
+    /*Style specifies to display the desktop class */
+    .desktop {
+        display: inline;
+    }
+    
+}
+
+/* Media query for desktop viewport targets screens with a min width of 830px. */
+
+@media only screen and (min-width: 830px) {
+    
+    /* Style specifies a width for container */
+    #outerwrapper {
+        width: 80%;
+    }
+    
+    /* Style specifies margin and padding for the unordered list within the nav */
+    nav ul {
+        margin: 0;
+        padding-left: 0.50%;
+        padding-right: 0.50%;
+    }
+    
+    /* Style for nav list items specifies a border radius, border, margin, width, and padding */
+    nav li {
+        border-radius: 0;
+        border-top: solid #000000;
+        border-bottom: solid #000000;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 20%;
+    }
+    
+    /* Style for nav links specifies display and padding */
+    nav li a {
+        display: inline-block;
+        padding: 0.7em;
+    }
+    
+    /*Style rules for pseudo-classes */
+    nav li a:link {
+        color: #B7918C;
+    }
+    
+    nav li a:visited {
+        color: #BFB48F;
+    }
+    
+    nav li a:hover {
+        color: #FAFAFA;
+        font-style: italic;
+    }
+    
+    /* Style specifies border, shadow, margin, and padding for main element */
+    #main {
+        border-style: none;
+        box-shadow: 0.5em 0.5em 0.5em #404040;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    
+    /* Style specifies left and right padding for paragraph elements within the main element */
+    #main p {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+}
