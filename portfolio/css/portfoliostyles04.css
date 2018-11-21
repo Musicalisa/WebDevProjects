@@ -1,0 +1,87 @@
+/* Lisa Cifuentes, 10/13/2018 */
+
+.float-left {
+    float: left;
+}
+
+img {
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+#outerwrapper {
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+#main {
+    clear: both;
+    background-color: #F9E7DF;
+    padding: 3%;
+    border: 2px black solid;
+    border-radius: 25px;
+
+}
+
+.myname {
+    font-family: Futura, Calibri, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 7%;
+}
+
+/* additional style: adding body background color and font */
+body {
+    background-color: #424242;
+    font-family: Garamond, Helvetica, serif;
+}
+
+/* additional style for header (color) and footer (specifies font size, text alignment, and top margin) */
+header {
+    color: #F9E7DF;
+}
+
+footer {
+    color: #F9E7DF;
+    font-size: .70em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* additional style for nav specifies text properties, padding, margins, and borders */
+nav {
+    float: left;
+    margin-left: 10px;
+    font-family: Garamond, Helvetica, serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border-top: 3px solid #F9E7DF;
+    border-bottom: 3px solid #F9E7DF;
+}
+
+/* adding color to h2 */
+h2 {
+    color: #424242;
+}
+
+/* additional styles for unvisited, visited, and hovered over links */
+a:link {
+    color: #B7918C;
+} 
+
+a:visited {
+    color: #BFB48F;
+}
+
+a:hover {
+    color: #FAFAFA;
+}
